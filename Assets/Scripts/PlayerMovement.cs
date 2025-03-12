@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed;
     public float sprintSpeed;
     public float slideSpeed;
+    public float wallrunSpeed;
 
     public float desiredMoveSpeed;
     public float lastDesiredMoveSpeed;
@@ -66,13 +67,14 @@ public class PlayerMovement : MonoBehaviour
     {
         walking,
         sprinting,
+        wallrunning,
         crouching,
         sliding,
         air
     }
 
     public bool sliding;
-
+    public bool wallrunning;
 
     private void Start()
     {
@@ -90,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(rb.velocity.y);
+        //Debug.Log(rb.velocity.y);
         // ground check 
         // ~~現在由 onSlope() 函式判斷~~
         // Physics.Raycast(射線起始點, 射線方向, 射線長度, LayerMask（圖層遮罩）用來過濾射線的檢測對象)
@@ -146,7 +148,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void StateHandler()
     {
-        if(grounded || OnSlope())
+        if(wallrunning)
+        {
+            state = MovementState.wallrunning;
+            desiredMoveSpeed = wallrunSpeed ;
+        }
+        else if(grounded || OnSlope())
         {
             //mode - Sliding
             if (sliding)
@@ -156,21 +163,21 @@ public class PlayerMovement : MonoBehaviour
                 if (OnSlope() && rb.velocity.y < 0.1f)
                 {
                     desiredMoveSpeed = slideSpeed;
-                    Debug.Log("slideSpeed");
+                    //Debug.Log("slideSpeed");
                 }
                 else
                 {
                     desiredMoveSpeed = sprintSpeed;
-                    Debug.Log("sprintSpeed");
+                    //Debug.Log("sprintSpeed");
                 }
-                Debug.Log("sliding");
+                //Debug.Log("sliding");
             }
             // mode - Crouching 
             else if (Input.GetKey(crouchKey))  
             {
                 state = MovementState.crouching;
                 desiredMoveSpeed = crouchSpeed;
-                Debug.Log("moveSpeed = " + crouchSpeed);
+                //Debug.Log("moveSpeed = " + crouchSpeed);
             }
             // mode - Sprinting
             else if (Input.GetKey(sprintKey))
@@ -270,7 +277,9 @@ public class PlayerMovement : MonoBehaviour
         else if(!grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
 
-        rb.useGravity = !OnSlope();
+        if(!wallrunning)
+            rb.useGravity = !OnSlope();
+        
     }
 
     private void SpeedControl()
@@ -289,6 +298,7 @@ public class PlayerMovement : MonoBehaviour
             // limit velocity if needed (不會一直衝刺)
             if(flatVel.magnitude > moveSpeed)
             {
+                Debug.Log("11");
                 Vector3 limitedVel = flatVel.normalized * moveSpeed;
                 rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);    
             }
