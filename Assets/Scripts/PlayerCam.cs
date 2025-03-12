@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 public class PlayerCam : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerCam : MonoBehaviour
     public float sensY;
 
     public Transform orientation;
+    public Transform camHolder;
 
     float xRotation;
     float yRotation;
@@ -32,10 +34,19 @@ public class PlayerCam : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         //rotate cam and orientation
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0); // 應用在第一人稱視角相機
+        camHolder.rotation = Quaternion.Euler(xRotation, yRotation, 0); // 應用在第一人稱視角相機
         orientation.rotation = Quaternion.Euler(0, yRotation, 0); // 應用在玩家朝向
 
     }
 
-    
+    public void DoFov(float endValue)
+    {
+        // 讓相機的 FOV 在 0.25 秒內 平滑地變化到 endValue
+        GetComponent<Camera>().DOFieldOfView(endValue, 0.25f);
+    }
+
+    public void DoTilt(float zTilt)
+    {
+        transform.DOLocalRotate(new Vector3(0, 0, zTilt), 0.25f);
+    }
 }
