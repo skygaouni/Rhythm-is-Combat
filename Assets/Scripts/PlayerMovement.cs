@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public float sprintSpeed;
     public float slideSpeed;
     public float wallrunSpeed;
+    public float climbSpeed;
+    public float airMinSpeed;
 
     public float desiredMoveSpeed;
     public float lastDesiredMoveSpeed;
@@ -27,9 +29,10 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Jumping")]
     public float jumpForce;
-    public float jumpCooldown;
+    public float jumpCooldownTime;
+    private float jumpCooldownTimer;
     public float airMultiplier;
-    bool readyToJump;
+    public bool readyToJump;
 
     [Header("Crouching")]
     public float crouchSpeed;
@@ -52,6 +55,9 @@ public class PlayerMovement : MonoBehaviour
     private bool exitingSlope;
     public bool onSlope;
 
+    [Header("References")]
+    public Climbing climbingScript;
+
     public Transform orientation;
 
     float horizontalInput;
@@ -65,9 +71,12 @@ public class PlayerMovement : MonoBehaviour
 
     public enum MovementState
     {
+        freeze,
+        unlimited,
         walking,
         sprinting,
         wallrunning,
+        climbing,
         crouching,
         sliding,
         air
@@ -75,6 +84,12 @@ public class PlayerMovement : MonoBehaviour
 
     public bool sliding;
     public bool wallrunning;
+    public bool climbing;
+
+    public bool freeze;
+    public bool unlimited;
+
+    public bool restricted; // 限制 MovePlayer
 
     private void Start()
     {
@@ -128,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 readyToJump = false;
                 Jump();
-                Invoke(nameof(ResetJump), jumpCooldown);
+                //Invoke(nameof(ResetJump), jumpCooldown);
             }
 
             // start crouch
@@ -146,9 +161,33 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    bool keepMomentum;
     private void StateHandler()
     {
-        if(wallrunning)
+        // mode - jumping
+        if (!readyToJump) ResetJump();
+
+        // mode - Freeze
+        if (freeze)
+        {
+            state = MovementState.freeze;
+            rb.velocity = Vector3.zero;
+            desiredMoveSpeed = 0f;
+        }
+        // mode - Unlimited
+        else if (unlimited)
+        {
+            state = MovementState.unlimited;
+            desiredMoveSpeed = 999f;
+            
+        }
+        // mode - climbing
+        else if (climbing)
+        {
+            state = MovementState.climbing;
+            desiredMoveSpeed = climbSpeed;
+        }
+        else if(wallrunning)
         {
             state = MovementState.wallrunning;
             desiredMoveSpeed = wallrunSpeed ;
@@ -163,6 +202,7 @@ public class PlayerMovement : MonoBehaviour
                 if (OnSlope() && rb.velocity.y < 0.1f)
                 {
                     desiredMoveSpeed = slideSpeed;
+                    keepMomentum = true;
                     //Debug.Log("slideSpeed");
                 }
                 else
@@ -189,7 +229,9 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 state = MovementState.walking;
-                desiredMoveSpeed = walkSpeed;
+
+                if(moveSpeed < airMinSpeed)
+                    desiredMoveSpeed = airMinSpeed;
             }
 
         }
@@ -197,20 +239,28 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             state = MovementState.air;
+            desiredMoveSpeed = walkSpeed;
         }
 
-        // check if desiredMoveSpeed has changed drastically
-        if(Mathf.Abs(desiredMoveSpeed - lastDesiredMoveSpeed) > 4f )
-        {
-            StopAllCoroutines();
-            StartCoroutine(SmoothlyLerpMoveSpeed());
-        }
-        else
-        {
-            moveSpeed = desiredMoveSpeed;
-        }
+        bool desiredMoveSpeedHasChanged = desiredMoveSpeed != lastDesiredMoveSpeed;
 
+        if(desiredMoveSpeedHasChanged)
+        {
+            // 只有從斜坡上滑下來的速度會慢慢遞減
+            if(keepMomentum)
+            {
+                StopAllCoroutines();
+                StartCoroutine(SmoothlyLerpMoveSpeed());
+            }
+            else
+            {
+                moveSpeed = desiredMoveSpeed;
+            }
+        }
         lastDesiredMoveSpeed = desiredMoveSpeed;
+
+        //deactivate keepMomentum
+        if(Mathf.Abs(desiredMoveSpeed - moveSpeed) < 0.1f) keepMomentum = false;
     }
 
     // smoothly lerp movementSpeed to desired value
@@ -250,7 +300,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MovePlayer()
     {
-        // calculate movement direction 
+        if (restricted) return;
+
+        if (climbingScript.exitingWall) return;
+
+        // calculate movement direction  
         // p.s. orientation 是物件的旋轉方向(面向)
         // quaternion 是物件的旋轉角度
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
@@ -274,8 +328,10 @@ public class PlayerMovement : MonoBehaviour
         else if(grounded) 
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
-        else if(!grounded)
+        else if (!grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        
+            
 
         if(!wallrunning)
             rb.useGravity = !OnSlope();
@@ -308,6 +364,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
+        //Debug.Log("Jump");
         exitingSlope = true;
 
         //reset y velocity to make sure the jump height is the same 
@@ -318,9 +375,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void ResetJump()
     {
-        readyToJump = true;
-
         exitingSlope = false;
+
+        if (jumpCooldownTimer > 0) jumpCooldownTimer -= Time.deltaTime;
+
+        if (jumpCooldownTimer <= 0)
+        {
+            jumpCooldownTimer = jumpCooldownTime;
+            readyToJump = true;
+        }
     }
 
     public bool OnSlope()

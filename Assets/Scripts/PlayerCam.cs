@@ -10,7 +10,7 @@ public class PlayerCam : MonoBehaviour
     public float sensX;
     public float sensY;
 
-    public Transform orientation;
+    public Transform orientation; // the information of where the player's looking(不管上下)
     public Transform camHolder;
 
     float xRotation;

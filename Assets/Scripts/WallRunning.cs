@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 
+// q1: multiple wall jump on the same wall
+// q2: maxWallRunTime結束後經過exitWallTime又馬上開始新的WallRun，這樣會使在相同牆的WallRun下怪怪的。
+// (Solved)q3: 沒辦法在牆壁頂端走(猜測為AddForce的力量太小) -> 將在空中的速度定為walSpeed已解決力量大小的問題
 public class WallRunning : MonoBehaviour
 {
     [Header("WallRunning")]
@@ -46,6 +49,7 @@ public class WallRunning : MonoBehaviour
     public PlayerCam cam;
     public Camera camCamera;
     private PlayerMovement pm;
+    private LedgeGrabbing lg;
     private Rigidbody rb;
 
     private float originalFov;
@@ -53,6 +57,7 @@ public class WallRunning : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         pm = GetComponent<PlayerMovement>();
+        lg = GetComponent<LedgeGrabbing>();
         originalFov = camCamera.fieldOfView;
     }
 
@@ -66,7 +71,6 @@ public class WallRunning : MonoBehaviour
     {
         if(pm.wallrunning)
             WallRunningMovement();
-        
     }
 
     private void CheckForWall()
@@ -104,6 +108,7 @@ public class WallRunning : MonoBehaviour
         // verticalInput > 0 -> press W key
         if ((wallLeft || wallRight) && verticalInput > 0 && AboveGround() && !exitingWall)
         {
+            //Debug.Log("StartWallRunning");
             if (!pm.wallrunning)
                 StartWallRun();
 
@@ -116,15 +121,13 @@ public class WallRunning : MonoBehaviour
                 exitWalltimer = exitWalltime;
             }
 
-
-
-            if (Input.GetKeyDown(jumpkey))
+            if (pm.state == PlayerMovement.MovementState.wallrunning && Input.GetKeyDown(jumpkey) && pm.readyToJump)
             {
-                Debug.Log("WallJump");
+                Debug.Log(pm.state); 
                 WallJump();
             }
                 
-
+ 
         }
         // State 2 - Exiting
         else if (exitingWall)
@@ -162,6 +165,8 @@ public class WallRunning : MonoBehaviour
 
     private void WallRunningMovement()
     {
+        //Debug.Log("WallRunningMovement");
+
         rb.useGravity = useGravity;
         
         Vector3 wallNormal = wallRight ? rightWallHit.normal : leftWallHit.normal;
@@ -205,6 +210,11 @@ public class WallRunning : MonoBehaviour
     // 在牆上跳
     private void WallJump()
     {
+        Debug.Log("WallRunningJump");
+
+        if (pm.grounded) return;
+        if (lg.holding || lg.exitingLedge) return;
+
         //enter exiting wall state
         exitingWall = true;
         exitWalltimer = exitWalltime; 
