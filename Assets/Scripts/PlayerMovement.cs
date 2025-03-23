@@ -87,8 +87,9 @@ public class PlayerMovement : MonoBehaviour
     public bool climbing;
 
     public bool freeze;
-    public bool unlimited;
+    public bool activeGrapple;
 
+    public bool unlimited;
     public bool restricted; // 限制 MovePlayer
 
     private void Start()
@@ -117,7 +118,7 @@ public class PlayerMovement : MonoBehaviour
         SpeedControl();
         StateHandler();
 
-        if (grounded)
+        if (grounded && !activeGrapple)
             rb.drag = groundDrag;
         else if(OnSlope())
             rb.drag = slopeDrag;
@@ -300,6 +301,9 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MovePlayer()
     {
+        // 防止在grabbing的時候移動造成目標遺失
+        if (activeGrapple) return;
+
         if (restricted) return;
 
         if (climbingScript.exitingWall) return;
@@ -340,6 +344,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void SpeedControl()
     {
+        if(activeGrapple) return;
+
         if(OnSlope() && !exitingSlope)
         {
             if (rb.velocity.magnitude > moveSpeed)
@@ -386,6 +392,45 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private bool enableMovementOnNextTouch;
+    private Vector3 velocityToSet;
+    public void jumpToPosition(Vector3 targetPosition, float trajectoryHeight)
+    {
+        activeGrapple = true;
+
+        velocityToSet = CalculateJumpVelocity(transform.position, targetPosition, trajectoryHeight);
+
+        // 增加delay，防止speed control變為inactive前就SetVelocity
+        Invoke(nameof(SetVelocity), 0.1f);
+
+        // 防止判斷出錯，3秒後強制執行ResetRestrictions
+        Invoke(nameof(ResetRestrictions), 3f);
+    }
+
+    private void SetVelocity()
+    {
+        enableMovementOnNextTouch = true;
+        rb.velocity = velocityToSet;
+    }
+
+    public void ResetRestrictions()
+    {
+        activeGrapple = false;
+    }
+
+    //不用主動呼叫，因為Unity 會在遊戲執行期間，主動檢查所有物理狀況(例如碰撞、觸發、進入範圍、滑鼠點擊等等)
+    private void OnCollisionEnter(Collision collision)
+    {
+        //Debug.Log("OnCollisionEnter");
+        if(enableMovementOnNextTouch)
+        {
+            enableMovementOnNextTouch = false;
+            ResetRestrictions();
+
+            GetComponent<Grappling>().StopGrapple();
+        }
+    }
+
     public bool OnSlope()
     {
         // slopeHit為坡面的法線向量
@@ -400,11 +445,31 @@ public class PlayerMovement : MonoBehaviour
         onSlope = false;
         return false;
     }
-    
+
     // 將moveDirection透過ProjectOnPlane投影到slopeHit.normal -> moveDirection 垂直於 slopeHit
     public Vector3 GetSlopeMoveDirection(Vector3 direction)
     {   
         return Vector3.ProjectOnPlane(direction, slopeHit.normal).normalized;
+    }
+
+    // watch https://www.youtube.com/watch?v=IvT8hjy6q4o
+    //trajectoryHeight: 拋物線頂點高度(相對player，非世界座標高度)
+    public Vector3 CalculateJumpVelocity(Vector3 startPoint, Vector3 endPoint, float trajectoryHeight)
+    {
+        float gravity = Physics.gravity.y;
+        float displacementY = endPoint.y - startPoint.y; 
+        Vector3 displacementXZ = new Vector3(endPoint.x - startPoint.x, 0f, endPoint.z - startPoint.z);
+
+        //從起點(這裡定起點為地面)向上跳到拋物線最高點所需的初速（Y 軸方向）
+        float timeToUp = Mathf.Sqrt(-2 * (trajectoryHeight - 0) / gravity);
+        float timeToDown = Mathf.Sqrt(2 * (displacementY - trajectoryHeight) / gravity);
+
+        Vector3 velocityY = Vector3.up * Mathf.Sqrt(-2 * gravity * trajectoryHeight);
+        Vector3 velocityXZ = displacementXZ / (timeToUp + timeToDown);
+
+        Debug.Log(displacementY - trajectoryHeight);
+
+        return velocityXZ + velocityY;
     }
 }
 
