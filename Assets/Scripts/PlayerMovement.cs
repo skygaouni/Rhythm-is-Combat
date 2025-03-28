@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float wallrunSpeed;
     public float climbSpeed;
     public float airMinSpeed;
+    public float swingSpeed;
 
     public float desiredMoveSpeed;
     public float lastDesiredMoveSpeed;
@@ -73,6 +74,8 @@ public class PlayerMovement : MonoBehaviour
     {
         freeze,
         unlimited,
+        grappling,
+        swinging,
         walking,
         sprinting,
         wallrunning,
@@ -88,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool freeze;
     public bool activeGrapple;
+    public bool swinging;
 
     public bool unlimited;
     public bool restricted; // 限制 MovePlayer
@@ -118,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
         SpeedControl();
         StateHandler();
 
-        if (grounded && !activeGrapple)
+        if (grounded && !activeGrapple && !swinging)
             rb.drag = groundDrag;
         else if(OnSlope())
             rb.drag = slopeDrag;
@@ -181,6 +185,15 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.unlimited;
             desiredMoveSpeed = 999f;
             
+        }
+        else if (activeGrapple)
+        {
+            state = MovementState.grappling;
+        }
+        else if (swinging)
+        {
+            state = MovementState.swinging;
+            desiredMoveSpeed = swingSpeed;
         }
         // mode - climbing
         else if (climbing)
@@ -303,6 +316,8 @@ public class PlayerMovement : MonoBehaviour
     {
         // 防止在grabbing的時候移動造成目標遺失
         if (activeGrapple) return;
+
+        if(swinging) return;
 
         if (restricted) return;
 
@@ -471,5 +486,7 @@ public class PlayerMovement : MonoBehaviour
 
         return velocityXZ + velocityY;
     }
+
+
 }
 
