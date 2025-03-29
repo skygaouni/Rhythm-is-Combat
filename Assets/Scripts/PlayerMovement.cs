@@ -221,6 +221,7 @@ public class PlayerMovement : MonoBehaviour
                 }
                 else
                 {
+                    //Debug.Log("sliding with sprintSpeed");
                     desiredMoveSpeed = sprintSpeed;
                     //Debug.Log("sprintSpeed");
                 }
@@ -244,8 +245,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 state = MovementState.walking;
 
-                if(moveSpeed < airMinSpeed)
-                    desiredMoveSpeed = airMinSpeed;
+                desiredMoveSpeed = walkSpeed;
+                
             }
 
         }
@@ -253,7 +254,9 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             state = MovementState.air;
-            desiredMoveSpeed = walkSpeed;
+
+            if (moveSpeed < airMinSpeed)
+                desiredMoveSpeed = airMinSpeed;
         }
 
         bool desiredMoveSpeedHasChanged = desiredMoveSpeed != lastDesiredMoveSpeed;
@@ -317,12 +320,13 @@ public class PlayerMovement : MonoBehaviour
         // 防止在grabbing的時候移動造成目標遺失
         if (activeGrapple) return;
 
-        if(swinging) return;
+        if (swinging) return;
 
         if (restricted) return;
 
         if (climbingScript.exitingWall) return;
 
+        //Debug.Log("MovePlayer");
         // calculate movement direction  
         // p.s. orientation 是物件的旋轉方向(面向)
         // quaternion 是物件的旋轉角度
@@ -375,7 +379,7 @@ public class PlayerMovement : MonoBehaviour
             // limit velocity if needed (不會一直衝刺)
             if(flatVel.magnitude > moveSpeed)
             {
-                Debug.Log("11");
+                //Debug.Log("11");
                 Vector3 limitedVel = flatVel.normalized * moveSpeed;
                 rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);    
             }
@@ -414,12 +418,13 @@ public class PlayerMovement : MonoBehaviour
         activeGrapple = true;
 
         velocityToSet = CalculateJumpVelocity(transform.position, targetPosition, trajectoryHeight);
+        //Debug.Log(velocityToSet);
 
         // 增加delay，防止speed control變為inactive前就SetVelocity
         Invoke(nameof(SetVelocity), 0.1f);
 
         // 防止判斷出錯，3秒後強制執行ResetRestrictions
-        Invoke(nameof(ResetRestrictions), 3f);
+        //Invoke(nameof(ResetRestrictions), 3f);
     }
 
     private void SetVelocity()
@@ -430,6 +435,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void ResetRestrictions()
     {
+        //Debug.Log("ResetRestrictions");
         activeGrapple = false;
     }
 
@@ -482,7 +488,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 velocityY = Vector3.up * Mathf.Sqrt(-2 * gravity * trajectoryHeight);
         Vector3 velocityXZ = displacementXZ / (timeToUp + timeToDown);
 
-        Debug.Log(displacementY - trajectoryHeight);
+        //Debug.Log(displacementY - trajectoryHeight);
 
         return velocityXZ + velocityY;
     }

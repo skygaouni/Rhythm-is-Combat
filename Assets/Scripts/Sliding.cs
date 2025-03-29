@@ -43,13 +43,13 @@ public class Sliding : MonoBehaviour
         }
             
 
-        if(Input.GetKeyUp(slideKey) && pm.sliding)
+        if(Input.GetKeyUp(slideKey) && pm.sliding && pm.state == PlayerMovement.MovementState.sliding)
             StopSlide();
     }
 
     private void FixedUpdate()
     {
-        if (pm.sliding)
+        if (pm.sliding && pm.state == PlayerMovement.MovementState.sliding)
             SlidingMovement();
     }
 

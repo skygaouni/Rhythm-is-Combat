@@ -53,6 +53,7 @@ public class Climbing : MonoBehaviour
 
     private void Update()
     {
+        //if (wallFront) Debug.Log(wallFront);
         WallCheck();
         StateMachine();
 
@@ -106,6 +107,8 @@ public class Climbing : MonoBehaviour
     private void WallCheck()
     {
         wallFront = Physics.SphereCast(transform.position, sphereCastRadius, orientation.forward, out frontWallHit, detectionLength, whatIsWall);
+        Debug.DrawRay(transform.position, orientation.forward * detectionLength, Color.red);
+
         wallLookAngle = Vector3.Angle(orientation.forward, -frontWallHit.normal);
         bool newWall = frontWallHit.transform != lastWall || Mathf.Abs(Vector3.Angle(lastWallNormal, frontWallHit.normal)) > minWallNormalAngleChange;
 
@@ -130,6 +133,7 @@ public class Climbing : MonoBehaviour
 
     private void ClimbingMovement()
     {
+        Debug.Log("ClimbingMovement");
         rb.velocity = new Vector3(rb.velocity.x, climbSpeed, rb.velocity.z);
 
         // sound effect
@@ -137,6 +141,7 @@ public class Climbing : MonoBehaviour
 
     private void StopClimbing()
     {
+        Debug.Log("StopClimbing");
         //climbing = false;
         pm.climbing = false;
 

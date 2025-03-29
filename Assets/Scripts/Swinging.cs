@@ -53,6 +53,7 @@ public class Swinging : MonoBehaviour
     {
         // return if predictionHit ont found 
         //if (predictionHit.point == Vector3.zero) return;
+        Debug.Log("StartSwing");
 
         RaycastHit hit;
         if(Physics.Raycast(cam.position, cam.forward, out hit, maxSwingDistance, whatIsGrappleable))
@@ -95,7 +96,7 @@ public class Swinging : MonoBehaviour
     {
         // if not grapping, don't draw rope
         if (!joint) return;
-        Debug.Log("DrawRope");
+        //Debug.Log("DrawRope");
 
         currentGrapplePosition = Vector3.Lerp(currentGrapplePosition, swingPoint, Time.deltaTime * 8f);
 

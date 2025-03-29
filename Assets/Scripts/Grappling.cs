@@ -35,8 +35,11 @@ public class Grappling: MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(grappleKey)) StartGrapple();
-
+        if (Input.GetKeyDown(grappleKey))
+        {
+            //Debug.Log("Press grappleKey");
+            StartGrapple();
+        }
         if(grapplingCdTimer > 0) grapplingCdTimer -= Time.deltaTime;
     }
 
@@ -59,6 +62,7 @@ public class Grappling: MonoBehaviour
         if (Physics.Raycast(cam.position, cam.forward, out hit, maxGrappleDistance, whatIsGrappleable))
         {
             grapplePoint = hit.point;
+            Debug.Log("ExecuteGrapple");
 
             Invoke(nameof(ExecuteGrapple), grappleDelayTime);
         }
