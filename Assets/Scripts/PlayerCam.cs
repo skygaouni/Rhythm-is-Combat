@@ -12,9 +12,11 @@ public class PlayerCam : MonoBehaviour
 
     public Transform orientation; // the information of where the player's looking(不管上下)
     public Transform camHolder;
+    public Transform player;
 
     float xRotation;
     float yRotation;
+
 
     private void Start()
     {
@@ -31,12 +33,12 @@ public class PlayerCam : MonoBehaviour
         yRotation += mouseX;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f); // 防止上下轉動預防反人類
 
         //rotate cam and orientation
         camHolder.rotation = Quaternion.Euler(xRotation, yRotation, 0); // 應用在第一人稱視角相機
-        orientation.rotation = Quaternion.Euler(0, yRotation, 0); // 應用在玩家朝向
-
+        orientation.rotation = Quaternion.Euler(0, yRotation, 0); // orientation僅記錄玩家朝向資訊
+        player.transform.rotation = orientation.rotation; // 實做玩家朝向
     }
 
     public void DoFov(float endValue)
