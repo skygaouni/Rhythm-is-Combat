@@ -5,6 +5,11 @@ using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //[Header("Player IK")]
+    //public Transform bodyTarget;
+    //public Transform bodyHint;
+    
+
     [Header("Movement")]
     public float moveSpeed; // 只管平面移動速度，不管y方向速度
     public float currentSpeed;
@@ -58,8 +63,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("References")]
     public Climbing climbingScript;
-
     public Transform orientation;
+    public Transform camHolder;
+    private Animator animator;
 
     float horizontalInput;
     float verticalInput;
@@ -68,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    [Header("Player State")]
     public MovementState state;
 
     public enum MovementState
@@ -98,6 +105,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponentInChildren<Animator>();
+
         moveSpeed = walkSpeed;
         desiredMoveSpeed = walkSpeed;
         lastDesiredMoveSpeed = walkSpeed;
@@ -116,11 +125,12 @@ public class PlayerMovement : MonoBehaviour
         // ground check 
         // ~~現在由 onSlope() 函式判斷~~
         // Physics.Raycast(射線起始點, 射線方向, 射線長度, LayerMask（圖層遮罩）用來過濾射線的檢測對象)
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, Vector3.down, 0.2f, whatIsGround);
 
         Myinput();
         SpeedControl();
         StateHandler();
+        AnimatorControllers();
 
         if (grounded && !activeGrapple && !swinging)
             rb.drag = groundDrag;
@@ -132,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        //bodyTarget.rotation = camHolder.transform.rotation;
         MovePlayer();
     }
 
@@ -146,6 +156,7 @@ public class PlayerMovement : MonoBehaviour
             // start jump
             if (Input.GetKey(jumpKey) && readyToJump)
             {
+                Debug.Log("Jump");
                 readyToJump = false;
                 Jump();
                 //Invoke(nameof(ResetJump), jumpCooldown);
@@ -493,6 +504,13 @@ public class PlayerMovement : MonoBehaviour
         return velocityXZ + velocityY;
     }
 
+    private void AnimatorControllers()
+    {
+        float xVelocity = Vector3.Dot(moveDirection.normalized, transform.right);
+        float zVelocity = Vector3.Dot(moveDirection.normalized, transform.forward);
 
+        animator.SetFloat("xVelocity", xVelocity, .1f, Time.deltaTime);
+        animator.SetFloat("zVelocity", zVelocity, .1f, Time.deltaTime);
+    }
 }
 
