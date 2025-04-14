@@ -20,7 +20,7 @@ public class Swinging : MonoBehaviour
     private SpringJoint joint; // Ãþ¦ü¼uÂ®
 
     [Header("Input")]
-    public KeyCode swingKey = KeyCode.Mouse0;
+    public KeyCode swingKey = KeyCode.Mouse3;
 
     [Header("OdmGear")]
     public Transform orientaiton;
