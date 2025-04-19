@@ -6,8 +6,8 @@ using static UnityEditor.Searcher.SearcherWindow.Alignment;
 public class PlayerMovement : MonoBehaviour
 {
     //[Header("Player IK")]
-    //public Transform bodyTarget;
-    //public Transform bodyHint;
+    //public Transform upperbodyTarget; // ±±®Ó≈s∏y
+    //public Transform upperbodyHint;
     
 
     [Header("Movement")]
