@@ -342,6 +342,7 @@ public class PlayerMovement : MonoBehaviour
         // p.s. orientation 是物件的旋轉方向(面向)
         // quaternion 是物件的旋轉角度
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        Debug.Log(moveDirection);
 
         if (OnSlope() && !exitingSlope)
         {
