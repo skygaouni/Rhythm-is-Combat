@@ -1,24 +1,24 @@
-﻿using System;
+﻿﻿using System;
+using LlamAcademy.ImpactSystem;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Pool;
-
 
 /// <summary>
 /// 儲存每一把槍的資料與功能模組
 /// </summary>
 [CreateAssetMenu(fileName = "Gun", menuName = "Guns/Gun", order = 0)]
-public class GunScriptabeObject : ScriptableObject
+public class GunScriptableObject : ScriptableObject
 {
     
-
-    //public ImpactType impactType;
+    public ImpactType impactType;
     public GunType type;
     public string name;
     public GameObject modelPrefab;
     public Vector3 spawnPoint;
     public Vector3 spawnRotation;
 
+    public DamageConfigScriptableObject damageConfig;
     public ShootConfigScriptableObject shootConfig;
     public TrailConfigScriptableObject trailConfig;
 
@@ -40,7 +40,7 @@ public class GunScriptabeObject : ScriptableObject
     /// <param name="activeMonoBehaviour"></param>
     public void Spawn(Transform parent, MonoBehaviour activeMonoBehaviour)
     {
-        Debug.Log("Spawn");
+        //Debug.Log("Spawn");
         this.activeMonoBehaviour = activeMonoBehaviour;
 
         lastShootTime = 0;
@@ -78,7 +78,7 @@ public class GunScriptabeObject : ScriptableObject
             initialClickTime = Time.time - Mathf.Lerp(0, lastDuration, Mathf.Clamp01(lerpTime));
         }
 
-        Debug.Log("Shoot");
+        //Debug.Log("Shoot");
         if (Time.time > shootConfig.FireRate + lastShootTime)
         {
             lastShootTime = Time.time;
@@ -98,7 +98,7 @@ public class GunScriptabeObject : ScriptableObject
                     shootConfig.hitMask
                ))
             {
-                Debug.Log("PlayTrail");
+                //Debug.Log("PlayTrail");
                 activeMonoBehaviour.StartCoroutine(
                     PlayTrail(
                         shootSystem.transform.position,
@@ -108,7 +108,7 @@ public class GunScriptabeObject : ScriptableObject
                 );
             }
             else {
-                Debug.Log("PlayTrail1");
+                //Debug.Log("PlayTrail1");
                 activeMonoBehaviour.StartCoroutine(
                     PlayTrail(
                         shootSystem.transform.position,
@@ -120,7 +120,10 @@ public class GunScriptabeObject : ScriptableObject
 
         }
     }
-
+    /// <summary>
+    /// Expected to be called every frame
+    /// </summary>
+    /// <param name="wantedToShoot"></param>
     public void Tick(bool wantedToShoot)
     {
         // 讓模型的 localRotation（本地角度）逐步逼近 spawnRotation
@@ -183,16 +186,23 @@ public class GunScriptabeObject : ScriptableObject
 
         instance.transform.position = endPoint;
 
-        /*if(hit.collider != null)
+        if(hit.collider != null)
         {
-            SurfaceManager.Instance.HandleImpact(
+            Debug.Log($"Hit: {hit.collider.name}");
+            /*SurfaceManager.Instance.HandleImpact(
                 hit.transform.gameObject,
                 endPoint,
                 hit.normal,
-                ImpactType,
+                impactType,
                 0
-            );
-        }*/
+            );*/
+
+            if (hit.collider.TryGetComponent(out IDamageable damageable) )
+            {
+                Debug.Log("TakeDamage");
+                damageable.TakeDamage(damageConfig.getDamage(distance));
+            }
+        }
 
 
         yield return new WaitForSeconds(trailConfig.duration); // 拖尾結束後暫停一下，讓玩家看到殘影
@@ -204,7 +214,7 @@ public class GunScriptabeObject : ScriptableObject
 
     private TrailRenderer CreateTrail()
     {
-        Debug.Log("CreateTrail");
+        //Debug.Log("CreateTrail");
         GameObject instance = new GameObject("Bullet Trail"); //  建立一個新的空物件，名字是 "Bullet Trail"
         TrailRenderer trail = instance.AddComponent<TrailRenderer>();
         trail.colorGradient = trailConfig.Color; // 顏色變化（漸層）
@@ -218,29 +228,4 @@ public class GunScriptabeObject : ScriptableObject
 
         return trail;
     }
-
-    /// <summary>
-    /// Expected to be called every frame
-    /// </summary>
-    /// <param name="WantsToShoot">Whether or not the player is trying to shoot</param>
-    /*public void Tick(bool WantsToShoot)
-    {
-        model.transform.localRotation = Quaternion.Lerp(
-            model.transform.localRotation,
-            Quaternion.Euler(spawnRotation),
-            Time.deltaTime * shootConfig.RecoilRecoverySpeed
-        );
-
-        if (WantsToShoot)
-        {
-            lastFrameWantedToShoot = true;
-            TryToShoot();
-        }
-
-        if (!WantsToShoot && lastFrameWantedToShoot)
-        {
-            stopShootingTime = Time.time;
-            lastFrameWantedToShoot = false;
-        }
-    }*/
 }

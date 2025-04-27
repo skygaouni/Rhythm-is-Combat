@@ -2,7 +2,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
-namespace LlamAcademy.Guns.Demo
+namespace Uni.Guns.Demo
 {
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Animator))]

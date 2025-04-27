@@ -1,4 +1,4 @@
-using LlamAcademy.Guns.Demo;
+using Uni.Guns.Demo;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,17 +12,17 @@ public class PlayerGunSelector : MonoBehaviour
     [SerializeField]
     private Transform gunParent; // 要把槍模型掛上去的位置
     [SerializeField]
-    private List<GunScriptabeObject> guns;// 所有可用的槍支資料（ScriptableObject 列表）
+    private List<GunScriptableObject> guns;// 所有可用的槍支資料（ScriptableObject 列表）
     [SerializeField]
     private PlayerIK inverseKinematics;
 
     [Space]
     [Header("Runtime Filled")]
-    public GunScriptabeObject activeGun; // 目前已經裝備的槍支 ScriptableObject
+    public GunScriptableObject activeGun; // 目前已經裝備的槍支 ScriptableObject
 
     private void Start()
     {
-        GunScriptabeObject gunObject = guns.Find(gunObject => gunObject.type == selectedGunType);
+        GunScriptableObject gunObject = guns.Find(gunObject => gunObject.type == selectedGunType);
 
         if (gunObject == null)
         {
