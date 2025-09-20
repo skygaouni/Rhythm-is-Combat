@@ -1,0 +1,358 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\roomgenerator\\roomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roomgenerator\\roomgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|d:\\unity\\addenemyattackeffect_v3\\addenemyattackeffect\\afterintegratemusic\\afterintegratemusic\\assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\music\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\music\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\music\\noteob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\music\\noteob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\music\\spritemover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\music\\spritemover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\music\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\music\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\music\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\music\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\startui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\player\\lookatcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\lookatcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\gun\\demo\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\demo\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\burstfft\\beatanalyzer_burstfft_nocoroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\burstfft\\beatanalyzer_burstfft_nocoroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\gun\\demo\\enemy\\fsm\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\demo\\enemy\\fsm\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\gun\\playeraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\playeraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\player\\playercollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\gun\\demo\\enemy\\enemypainresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\demo\\enemy\\enemypainresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{481FC4A4-62BA-A008-E323-265640B43BAA}|Unity.AI.Navigation.Samples.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\samples\\ai navigation\\1.1.6\\build and connect navmesh surfaces\\scripts\\surfacenavmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{481FC4A4-62BA-A008-E323-265640B43BAA}|Unity.AI.Navigation.Samples.csproj|solutionrelative:assets\\samples\\ai navigation\\1.1.6\\build and connect navmesh surfaces\\scripts\\surfacenavmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\gun\\demo\\enemy\\fsm\\fsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\demo\\enemy\\fsm\\fsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\gun\\demo\\enemy\\fsm\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\demo\\enemy\\fsm\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\player\\playerpainresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerpainresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\gun\\demo\\spawnparticlesystemondeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\demo\\spawnparticlesystemondeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D192465-4B27-C721-D2DD-98DC5D427D73}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LookAtCamera.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\LookAtCamera.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\LookAtCamera.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\LookAtCamera.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\LookAtCamera.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T07:26:40.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnemyHealth.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\EnemyHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\Demo\\Enemy\\EnemyHealth.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\EnemyHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\Demo\\Enemy\\EnemyHealth.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T06:45:44.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\StartUI\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StartUI\\UIManager.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\StartUI\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StartUI\\UIManager.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAswGoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:12:06.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChaseState.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\ChaseState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\ChaseState.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\ChaseState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\ChaseState.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAwwEcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:10:41.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PlayerAction.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\PlayerAction.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\PlayerAction.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\PlayerAction.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\PlayerAction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T14:22:26.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NoteOB.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\NoteOB.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Music\\NoteOB.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\NoteOB.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Music\\NoteOB.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAmwEkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T10:13:41.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Music\\Spawner.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\Spawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Music\\Spawner.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T09:54:04.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Music\\GameManager.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Music\\GameManager.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAYwJ4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T09:53:34.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoomGenerator.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\RoomGenerator\\RoomGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RoomGenerator\\RoomGenerator.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\RoomGenerator\\RoomGenerator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RoomGenerator\\RoomGenerator.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAiwF4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T18:08:24.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScoreManager.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\ScoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Music\\ScoreManager.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\ScoreManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Music\\ScoreManager.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T07:43:37.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SpriteMover.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\SpriteMover.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Music\\SpriteMover.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Music\\SpriteMover.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Music\\SpriteMover.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T07:44:54.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwD0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T07:57:27.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BeatAnalyzer_BurstFFT_noCoroutine.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\BurstFft\\BeatAnalyzer_BurstFFT_noCoroutine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BurstFft\\BeatAnalyzer_BurstFFT_noCoroutine.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\BurstFft\\BeatAnalyzer_BurstFFT_noCoroutine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BurstFft\\BeatAnalyzer_BurstFFT_noCoroutine.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwJIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:54:57.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PatrolState.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\PatrolState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\PatrolState.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\PatrolState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\PatrolState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:50:56.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SurfaceNavMesh.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Samples\\AI Navigation\\1.1.6\\Build And Connect NavMesh Surfaces\\Scripts\\SurfaceNavMesh.cs",
+              "RelativeDocumentMoniker": "Assets\\Samples\\AI Navigation\\1.1.6\\Build And Connect NavMesh Surfaces\\Scripts\\SurfaceNavMesh.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Samples\\AI Navigation\\1.1.6\\Build And Connect NavMesh Surfaces\\Scripts\\SurfaceNavMesh.cs",
+              "RelativeToolTip": "Assets\\Samples\\AI Navigation\\1.1.6\\Build And Connect NavMesh Surfaces\\Scripts\\SurfaceNavMesh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:50:57.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SpawnParticleSystemOnDeath.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\SpawnParticleSystemOnDeath.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\Demo\\SpawnParticleSystemOnDeath.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\SpawnParticleSystemOnDeath.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\Demo\\SpawnParticleSystemOnDeath.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAxAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANpSURBVDhP7VNdaFtVHP\u002Bfe3OTe5M0HzTpmpg4WsrWD1sZzEDqChuCY7CWgeKToNYxfHA\u002B\u002BaAPYosEH8pA8EFQ/ACRSS0DIwG3wDrHSEddndkW\u002B5GbNhraa3Zv0tvk5ib383gy9u6D\u002BLYfnHM4H//f//f/OPAE/xmoO2GMqdXd1eDmX5vBbDFL5XfzoGs6hHpCEPaGmxPCRHVubg7KrXLf5ZXLvqX7S82Lxy7unxw\u002B2b9wc8FxvXR9f0Pb2Id5sClChlYqKwG7bb9mgbVI9mnWyaZZjk1zLq473lWPqR5BEHqVuvK\u002BZVhpbOD3VKSOK4byOdGzaJjG68PacLArEC3vLLPQhrfW9tZmeYkfoYCiIr5Im2M4jEgAxMkPk4cnU7FA7PxifvHlG/yNoaJU5D1Oz73jTx1/YUvaclfkyj2g4UvbtL92lHZLTNtsJ3ZqO\u002BO2bcPUwFStz9f3vY/11RqdBtTV\u002Bn1CplKIktyMu8M5OeIGdViarQU9QdMpOzFRpgCGA6bOYBomwSXIwrRhG\u002BMDvQN/nhk\u002BcyXABD4hZNkDdJDr9fVuFHPF5uDTg/yhwKHn5LY8xtf4mxeSF76YHpt\u002BsSSV3Hydv0LT9Hf8x3yT2qxtQnm/DDRFg4ty/VqWyh8NxYe2T4ycaJ4bOdc8NXCqMzo6SmtYCxEyVjVUIJGw69X1kNgSHZqlIaLYi3Xshw8BUd0qW5bVXUhGkbHWWFPJaj86eIzoYLQfUziVLqSfz25loaE1JjPrmdT8z/ORO5U7HLbxSySHb0YgwjqOwlEAP4BhGUBCcbgVt3f5wTKGMIAoitASW6akSjJHc99ORCd6HjYfJm5Xbv8e98WzZ0fPnict48/v5X/BCGejQtSgZ9\u002BedcVD8WlFV8ZJtewwFw7EgrEEZ3LJTqeTbFktv2zJfyQPJ7c8jKdRPahuF2vFTOp06qfkYLJZ\u002BLvwGy/yP1IilSt8VtAdiWcThtJQVjVbe0Y39SHSW\u002B/c3buLifGjtjexuaSJ2jUSeYvqozJIQ9e8Ia9RfVA1jkwd\u002BYrcIyQhg/\u002BU17vpQaTcKFfIBWtm7Q3i\u002BdVb27fcQkMAhmYg5o9Bf09/BvWgDy6dvtTqGvwbqC7l1bGrMvkd35A8vWIa5oxiKjOqps7obX3GRvaCN\u002BdtP37/BP87AP4BIiq3dhrfwbkAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-05-19T15:50:56.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PlayerCollision.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\PlayerCollision.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerCollision.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\PlayerCollision.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerCollision.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:50:56.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EnemyPainResponse.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\EnemyPainResponse.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\Demo\\Enemy\\EnemyPainResponse.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\EnemyPainResponse.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\Demo\\Enemy\\EnemyPainResponse.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T09:28:37.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AQIAAGIBAAAAAAAAAAAAAHsBAAAdAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANpSURBVDhP7VNdaFtVHP\u002Bfe3OTe5M0HzTpmpg4WsrWD1sZzEDqChuCY7CWgeKToNYxfHA\u002B\u002BaAPYosEH8pA8EFQ/ACRSS0DIwG3wDrHSEddndkW\u002B5GbNhraa3Zv0tvk5ib383gy9u6D\u002BLYfnHM4H//f//f/OPAE/xmoO2GMqdXd1eDmX5vBbDFL5XfzoGs6hHpCEPaGmxPCRHVubg7KrXLf5ZXLvqX7S82Lxy7unxw\u002B2b9wc8FxvXR9f0Pb2Id5sClChlYqKwG7bb9mgbVI9mnWyaZZjk1zLq473lWPqR5BEHqVuvK\u002BZVhpbOD3VKSOK4byOdGzaJjG68PacLArEC3vLLPQhrfW9tZmeYkfoYCiIr5Im2M4jEgAxMkPk4cnU7FA7PxifvHlG/yNoaJU5D1Oz73jTx1/YUvaclfkyj2g4UvbtL92lHZLTNtsJ3ZqO\u002BO2bcPUwFStz9f3vY/11RqdBtTV\u002Bn1CplKIktyMu8M5OeIGdViarQU9QdMpOzFRpgCGA6bOYBomwSXIwrRhG\u002BMDvQN/nhk\u002BcyXABD4hZNkDdJDr9fVuFHPF5uDTg/yhwKHn5LY8xtf4mxeSF76YHpt\u002BsSSV3Hydv0LT9Hf8x3yT2qxtQnm/DDRFg4ty/VqWyh8NxYe2T4ycaJ4bOdc8NXCqMzo6SmtYCxEyVjVUIJGw69X1kNgSHZqlIaLYi3Xshw8BUd0qW5bVXUhGkbHWWFPJaj86eIzoYLQfUziVLqSfz25loaE1JjPrmdT8z/ORO5U7HLbxSySHb0YgwjqOwlEAP4BhGUBCcbgVt3f5wTKGMIAoitASW6akSjJHc99ORCd6HjYfJm5Xbv8e98WzZ0fPnict48/v5X/BCGejQtSgZ9\u002BedcVD8WlFV8ZJtewwFw7EgrEEZ3LJTqeTbFktv2zJfyQPJ7c8jKdRPahuF2vFTOp06qfkYLJZ\u002BLvwGy/yP1IilSt8VtAdiWcThtJQVjVbe0Y39SHSW\u002B/c3buLifGjtjexuaSJ2jUSeYvqozJIQ9e8Ia9RfVA1jkwd\u002BYrcIyQhg/\u002BU17vpQaTcKFfIBWtm7Q3i\u002BdVb27fcQkMAhmYg5o9Bf09/BvWgDy6dvtTqGvwbqC7l1bGrMvkd35A8vWIa5oxiKjOqps7obX3GRvaCN\u002BdtP37/BP87AP4BIiq3dhrfwbkAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-05-19T15:50:56.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FSM.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\FSM.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\FSM.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\FSM.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\Demo\\Enemy\\FSM\\FSM.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAmwL0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:50:56.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PlayerPainResponse.cs",
+              "DocumentMoniker": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\PlayerPainResponse.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerPainResponse.cs",
+              "ToolTip": "D:\\unity\\AddEnemyAttackEffect_v3\\AddEnemyAttackEffect\\AfterIntegrateMusic\\AfterIntegrateMusic\\Assets\\Scripts\\Player\\PlayerPainResponse.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerPainResponse.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAqwEQAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANpSURBVDhP7VNdaFtVHP\u002Bfe3OTe5M0HzTpmpg4WsrWD1sZzEDqChuCY7CWgeKToNYxfHA\u002B\u002BaAPYosEH8pA8EFQ/ACRSS0DIwG3wDrHSEddndkW\u002B5GbNhraa3Zv0tvk5ib383gy9u6D\u002BLYfnHM4H//f//f/OPAE/xmoO2GMqdXd1eDmX5vBbDFL5XfzoGs6hHpCEPaGmxPCRHVubg7KrXLf5ZXLvqX7S82Lxy7unxw\u002B2b9wc8FxvXR9f0Pb2Id5sClChlYqKwG7bb9mgbVI9mnWyaZZjk1zLq473lWPqR5BEHqVuvK\u002BZVhpbOD3VKSOK4byOdGzaJjG68PacLArEC3vLLPQhrfW9tZmeYkfoYCiIr5Im2M4jEgAxMkPk4cnU7FA7PxifvHlG/yNoaJU5D1Oz73jTx1/YUvaclfkyj2g4UvbtL92lHZLTNtsJ3ZqO\u002BO2bcPUwFStz9f3vY/11RqdBtTV\u002Bn1CplKIktyMu8M5OeIGdViarQU9QdMpOzFRpgCGA6bOYBomwSXIwrRhG\u002BMDvQN/nhk\u002BcyXABD4hZNkDdJDr9fVuFHPF5uDTg/yhwKHn5LY8xtf4mxeSF76YHpt\u002BsSSV3Hydv0LT9Hf8x3yT2qxtQnm/DDRFg4ty/VqWyh8NxYe2T4ycaJ4bOdc8NXCqMzo6SmtYCxEyVjVUIJGw69X1kNgSHZqlIaLYi3Xshw8BUd0qW5bVXUhGkbHWWFPJaj86eIzoYLQfUziVLqSfz25loaE1JjPrmdT8z/ORO5U7HLbxSySHb0YgwjqOwlEAP4BhGUBCcbgVt3f5wTKGMIAoitASW6akSjJHc99ORCd6HjYfJm5Xbv8e98WzZ0fPnict48/v5X/BCGejQtSgZ9\u002BedcVD8WlFV8ZJtewwFw7EgrEEZ3LJTqeTbFktv2zJfyQPJ7c8jKdRPahuF2vFTOp06qfkYLJZ\u002BLvwGy/yP1IilSt8VtAdiWcThtJQVjVbe0Y39SHSW\u002B/c3buLifGjtjexuaSJ2jUSeYvqozJIQ9e8Ia9RfVA1jkwd\u002BYrcIyQhg/\u002BU17vpQaTcKFfIBWtm7Q3i\u002BdVb27fcQkMAhmYg5o9Bf09/BvWgDy6dvtTqGvwbqC7l1bGrMvkd35A8vWIa5oxiKjOqps7obX3GRvaCN\u002BdtP37/BP87AP4BIiq3dhrfwbkAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-05-19T15:50:56.593Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\unity\\final_v4\\final\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|d:\\unity\\final_v4\\final\\assets\\scripts\\ui\\uidirector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uidirector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|d:\\unity\\final_v4\\final\\assets\\scripts\\player\\playerattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|d:\\unity\\final_v4\\final\\assets\\scripts\\ui\\camerasensitivitysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\camerasensitivitysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|d:\\unity\\final_v4\\final\\assets\\scripts\\music\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\music\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|d:\\unity\\final_v4\\final\\assets\\scripts\\music\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\music\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|d:\\unity\\final_v4\\final\\assets\\scripts\\music\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858C28F2-1B8C-9FF8-BF09-4B58E2AD881A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\music\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraSensitivitySettings.cs",
+              "DocumentMoniker": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\UI\\CameraSensitivitySettings.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\CameraSensitivitySettings.cs",
+              "ToolTip": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\UI\\CameraSensitivitySettings.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\CameraSensitivitySettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T17:41:42.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\Music\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Music\\Spawner.cs",
+              "ToolTip": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\Music\\Spawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Music\\Spawner.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T17:38:50.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\Music\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Music\\GameManager.cs",
+              "ToolTip": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\Music\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Music\\GameManager.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T17:38:29.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScoreManager.cs",
+              "DocumentMoniker": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\Music\\ScoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Music\\ScoreManager.cs",
+              "ToolTip": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\Music\\ScoreManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Music\\ScoreManager.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwD0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T17:37:46.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIDirector.cs",
+              "DocumentMoniker": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\UI\\UIDirector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIDirector.cs",
+              "ToolTip": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\UI\\UIDirector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIDirector.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T17:29:33.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerAttributes.cs",
+              "DocumentMoniker": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\Player\\PlayerAttributes.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAttributes.cs",
+              "ToolTip": "D:\\unity\\final_v4\\final\\Assets\\Scripts\\Player\\PlayerAttributes.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAttributes.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T17:27:04.93Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

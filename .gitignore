@@ -1,20 +1,2 @@
-﻿################################################################################
-# 這個 .gitignore 檔案由 Microsoft(R) Visual Studio 自動建立。
-################################################################################
-
-/.vs
-/.vsconfig
-/ALP8310_ControllerGlobal.csproj
-/ALP8310_ControllerGlobal.Editor.csproj
-/Assembly-CSharp-Editor.csproj
-/Assembly-CSharp-firstpass.csproj
-/Assembly-CSharp.csproj
-/Assets
-/BlenderLearning.sln
-/Library
-/Logs
-/obj
-/Packages
-/ProjectSettings
-/Temp
-/UserSettings
+Library/
+Assets/
