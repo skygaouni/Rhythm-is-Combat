@@ -1,0 +1,31 @@
+🎸1. 搖滾風格（Rock）
+Prompt:
+Energetic 80s-style rock track with electric guitars, heavy drums, and a driving bassline. Upbeat tempo, rebellious and powerful mood.
+
+🎹2. Lo-fi Chillhop
+Prompt:
+Lo-fi chillhop beat with dusty vinyl crackle, mellow piano chords, jazzy saxophone riffs, and laid-back boom-bap drums. Relaxed and nostalgic vibe.
+
+🧘‍♀️3. 冥想/環境音樂（Ambient / Meditation）
+Prompt:
+Slow ambient meditation music with soft synth pads, Tibetan singing bowls, subtle wind chimes, and a serene soundscape. Peaceful and introspective mood.
+
+🎻4. 古典音樂（Classical）
+Prompt:
+Romantic-era classical composition with solo violin and orchestral accompaniment, featuring dynamic crescendos and expressive melodies. Elegant and emotional.
+
+🎺5. 爵士樂（Jazz）
+Prompt:
+Smooth jazz ensemble with upright bass, brushed drums, mellow saxophone, and electric piano. Swinging rhythm, cool and sophisticated mood.
+
+🎮6. 電子音樂 / 合成器風格（Synthwave / EDM）
+Prompt:
+Retro synthwave track with pulsating analog synths, gated reverb drums, and a neon-glow atmosphere. Inspired by 1980s sci-fi aesthetics. Energetic and cinematic.
+
+🥁7. 世界音樂 / 非洲打擊（World Music - African Percussion）
+Prompt:
+Rhythmic African tribal percussion with djembe, talking drum, and hand claps. Hypnotic grooves and earthy textures. Energetic and cultural.
+
+🎼8. 電影配樂 / 史詩音樂（Cinematic / Epic）
+Prompt:
+Epic cinematic score with dramatic orchestration, powerful taiko drums, haunting choirs, and rising tension. Perfect for a battle scene.

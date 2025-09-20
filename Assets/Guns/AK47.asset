@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a829da40c6858394cb3376692f4e0033, type: 3}
+  m_Name: AK47
+  m_EditorClassIdentifier: 
+  canShoot: 1
+  impactType: {fileID: 0}
+  type: 1
+  name: AK47
+  modelPrefab: {fileID: 3686847928409965784, guid: c7f0b1ecb96e39645aa92bfa57ad6a33,
+    type: 3}
+  hitParticlePrefab: {fileID: 376947768369527269, guid: 5d1d21e4425e109498349e71f185b0b7,
+    type: 3}
+  shootSound: {fileID: 8300000, guid: 3ca44cc3bda125f4dbd0136766ae2c85, type: 3}
+  spawnPoint: {x: 0, y: 0, z: 0}
+  spawnRotation: {x: 0, y: 0, z: 0}
+  damageConfig: {fileID: 11400000, guid: e702cb1842fc4584cb7fc8eb4aaf9e8d, type: 2}
+  shootConfig: {fileID: 11400000, guid: ee476cd3b1bd10642abc6bfc5b9ca83e, type: 2}
+  trailConfig: {fileID: 11400000, guid: f8362dad000f77a41a85c24bbc5fd336, type: 2}
+  currentMagazineCapacity: 25
