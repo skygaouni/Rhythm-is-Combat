@@ -9,9 +9,13 @@ public class EnemyPainResponse : MonoBehaviour
     [SerializeField]
     private EnemyHealth health;
     private Animator animator;
+
     [SerializeField]
     [Range(1, 100)]
     private int MaxDamagePainThreshold = 5;
+
+    public FSM manager;
+    public GameObject healthbar;
 
     private void Awake()
     {
@@ -22,28 +26,23 @@ public class EnemyPainResponse : MonoBehaviour
     {
         if (health.currentHealth != 0)
         {
-            // you can do some cool stuff based on the
-            // amount of damage taken relative to max health
-            // here we're simply setting the additive layer
-            // weight based on damage vs max pain threshhold
-            animator.ResetTrigger("Hit");
-            animator.SetLayerWeight(1, (float)Damage / MaxDamagePainThreshold);
-            animator.SetTrigger("Hit");
+            manager.parameter.injury = true;
+            //animator.SetLayerWeight(1, (float)Damage / MaxDamagePainThreshold);
         }
     }
 
     public void HandleDeath()
     {
         animator.applyRootMotion = true;
-        animator.SetTrigger("Die");
-
+        manager.parameter.die = true;
+        healthbar.SetActive(false);
         // 啟動5秒後自動消失
         Invoke(nameof(DestroyAfterDeath), 5f);
     }
 
     void DestroyAfterDeath()
     {
-        gameObject.SetActive(false);
-        //Destroy(gameObject);
+        // gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }

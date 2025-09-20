@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;  // 加入這行來使用 Slider
 
 public class EnemyHealth : MonoBehaviour, IDamageable
 {
@@ -19,16 +20,40 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     public event IDamageable.takeDamageEvent onTakeDamage;
     public event IDamageable.deathEvent onDeath;
 
+    [SerializeField] private Slider healthSlider;  // 拖入 Canvas 裡的 Slider
+    [SerializeField] private GameObject healthUIRoot;  // 新增這個欄位來控制整個血條是否顯示
+
     private void OnEnable()
     {
         currentHealth = maxHealth;
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = maxHealth;
+        }
+
+        if (healthUIRoot != null)
+        {
+            healthUIRoot.SetActive(false);  // 一開始先隱藏血條
+        }
     }
 
     public void TakeDamage(int damage)
     {
         int damageTaken = Mathf.Clamp(damage, 0, currentHealth);
 
+        // 血條顯示
+        if (damageTaken > 0 && healthUIRoot != null && !healthUIRoot.activeSelf)
+        {
+            healthUIRoot.SetActive(true);
+        }
+
         currentHealth -= damageTaken;
+
+        if (healthSlider != null)
+        {
+            healthSlider.value = currentHealth;
+        }
 
         if (damageTaken != 0)
         {

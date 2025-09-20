@@ -9,6 +9,7 @@ public class ShootConfigScriptableObject : ScriptableObject
     public float FireRate = 0.25f; // 兩次射擊之間最少要間隔多久，才能開下一發
     public float recoilRecoverySpeed = 1f;
     public float maxSpreadTime = 1f;
+    public int magazineCapacity = 26; // 彈匣容量
 
     public BulletSpreadType spreadType = BulletSpreadType.Simple;
 

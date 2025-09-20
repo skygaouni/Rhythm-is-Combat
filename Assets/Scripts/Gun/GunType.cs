@@ -6,5 +6,6 @@
 public enum GunType
 {
     Glock, 
-    AK47
+    AK47,
+    Rifle
 }

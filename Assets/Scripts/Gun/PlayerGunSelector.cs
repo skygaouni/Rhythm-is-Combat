@@ -35,6 +35,6 @@ public class PlayerGunSelector : MonoBehaviour
         gunObject.Spawn(gunParent, this);
 
         // some magic for IK
-        inverseKinematics.Setup(gunParent);
+        //inverseKinematics.Setup(gunParent);
     }
 }

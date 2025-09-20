@@ -9,11 +9,11 @@ public class PlayerAction : MonoBehaviour
     [SerializeField]
     private PlayerGunSelector gunsleSelector;
 
-    private void Update()
+   /* private void Update()
     {
         if(gunsleSelector.activeGun != null)
         {
             gunsleSelector.activeGun.Tick(Mouse.current.leftButton.isPressed);
         }
-    }
+    }*/
 }

@@ -19,7 +19,6 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("death");
         painResponse.HandleDeath();
-        movement.StopMoving();
-        
+        movement.StopMoving();   
     }
 }

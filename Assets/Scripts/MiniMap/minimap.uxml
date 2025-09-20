@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/MiniMap/minimap.uss?fileID=7433441132597879392&amp;guid=b852288fe5b97664db423539b781369f&amp;type=3#minimap" />
+    <ui:VisualElement name="VisualElement" style="background-image: url(&quot;project://database/Assets/Material/Texture/Minimap.renderTexture?fileID=8400000&amp;guid=6b4f5be0986572243bc7100268b319ab&amp;type=2#Minimap&quot;); width: 300px; height: 300px; left: 1620px; top: 10px; right: 10px; bottom: 655px;" />
+</ui:UXML>
