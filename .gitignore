@@ -1,5 +1,8 @@
-Library/
-Assets/asset_store_resource
-Assets/Flooded_Grounds
-Assets/TheTalesFactory
-Assets/Nebula Skyboxes
+Library/Artifacts
+Library/PackageCache
+Library/ArtifactDB
+
+Assets/asset_store_resource # 已 push 
+Assets/Flooded_Grounds 
+Assets/TheTalesFactory # 已 push
+Assets/NebulaSkyboxes 

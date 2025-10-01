@@ -429,6 +429,7 @@
     <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
     <None Include="Assets\Image\kenney_game-icons\Spritesheet\sheet_white1x.xml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\Resources\beatmap\example_1_3.txt" />
     <None Include="Assets\Resources\beatmap\tempo_120.txt_energy.txt" />
     <None Include="Assets\Resources\beatmap\p.txt_energy.txt" />
     <None Include="Assets\Image\kenney_game-icons\Spritesheet\sheet_black2x.xml" />
@@ -457,6 +458,7 @@
     <None Include="Assets\Resources\beatmap\Kevin&apos;s theme.txt_energy.txt" />
     <None Include="Assets\Blood decal pack\readme.txt" />
     <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+    <None Include="Assets\Resources\beatmap\example_1_3.txt_energy.txt" />
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorLeaves.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Bloom.cginc" />
